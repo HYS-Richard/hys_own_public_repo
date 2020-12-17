@@ -37,6 +37,14 @@ git add .
 git commit -m "msg"
 ```
 
+```
+以忽略.DS_Store 文件为例
+在.gitignore 文件中加入
+.DS_Store 
+*/.DS_Store 
+即可忽略该文件
+```
+
 
 
 ##### java开发通用模版
@@ -86,4 +94,11 @@ Thumbs.db
 ## License
 
 ![pic1](figs/pic1.png)
+
+## Git 删除当前目录所有同一名称文件
+
+```
+以.DS_Store 文件为例
+find . -name '*.DS_Store' -type f -delete 
+```
 
